@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ol>
+				<li>
+					<a onclick="myFunction()">cart</a>
+				</li>
+			</ol>
+		</nav>
+	</header>
+	<div id="toggle-window"  class="cart-modal" onclick="myFunction()"></div>
+	<div id="cart" class="cart-wrapper">
+		<div class="cart-header">
+			<div class="cart-header-left">
+				<h2>Your Cart</h2>
+			</div>			
+			<div class="cart-header-content">
+				<img src="img/vector.svg" alt="test">
+				<p>Item in your cart is reserved for <time class="pink"><b>9:58</b></time></p>
+				<img src="img/vector.svg" alt="test">
+			</div>
+			<div class="cart-close">
+				<button class="g-icons" onclick="myFunction()" type="button">
+					<span class="material-icons">
+						close
+					</span>
+				</button>
+			</div>
+		</div>
+		<div class="cart-top">
+			<img src="img/cart.svg" alt="test">
+			<p><b class="pink">235 people</b> are checking this out</p>
+		</div>
+		<div class="cart-products">
+			<div class="product-container">
+				<div class="product-img-wrapper">
+					<div class="product-img">
+						<img src="img/product1.jpg" alt="test">
+					</div>
+				</div>
+				<div class="product-content">
+
+					<h3>Drippa Gel</h3>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta magnam sint ab maiores perferendis, molestias.</p>
+					<div class="qty">
+						<button class="g-icons"><span class="material-icons">remove</span></button>
+						<p>1</p>
+						<button class="g-icons"><span class="material-icons">add</span></button>
+					</div>
+				</div>
+				<div class="cart-price">
+					<button class="delete-icon"><span class="material-symbols-outlined">delete</span></button>
+					<h3>$30.00</h3>
+				</div>
+			</div>
+			<div class="product-container">
+				<div class="product-img-wrapper">
+					<div class="product-img">
+						<img src="img/product2.jpg" alt="test">
+					</div>
+				</div>
+				<div class="product-content">
+
+					<h3>Drippa Gel</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste delectus vitae, eveniet officiis, dicta necessitatibus.</p>
+					<div class="qty">
+						<button class="g-icons"><span class="material-icons">remove</span></button>
+						<p>1</p>
+						<button class="g-icons"><span class="material-icons">add</span></button>
+					</div>
+				</div>
+				<div class="cart-price">
+					<button class="delete-icon"><span class="material-symbols-outlined">delete</span></button>
+					<h3>$30.00</h3>
+				</div>
+			</div>
+			<div class="product-container">
+				<div class="product-img-wrapper">
+					<div class="product-img">
+						<img src="img/product1.jpg" alt="test">
+					</div>
+				</div>
+				<div class="product-content">
+
+					<h3>Drippa Gel</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quis pariatur eum, accusamus consectetur laborum?</p>
+					<div class="qty">
+						<button class="g-icons"><span class="material-icons">remove</span></button>
+						<p>1</p>
+						<button class="g-icons"><span class="material-icons">add</span></button>
+					</div>
+				</div>
+				<div class="cart-price">
+					<button class="delete-icon"><span class="material-symbols-outlined">delete</span></button>
+					<h3>$30.00</h3>
+				</div>
+			</div>
+			<div class="product-container">
+				<div class="product-img-wrapper">
+					<div class="product-img">
+						<img src="img/product2.jpg" alt="test">
+					</div>
+				</div>
+				<div class="product-content">
+
+					<h3>Drippa Gel</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio libero sit, magnam, culpa nisi consequuntur.</p>
+					<div class="qty">
+						<button class="g-icons"><span class="material-icons">remove</span></button>
+						<p>1</p>
+						<button class="g-icons"><span class="material-icons">add</span></button>
+					</div>
+				</div>
+				<div class="cart-price">
+					<button class="delete-icon"><span class="material-symbols-outlined">delete</span></button>
+					<h3>$30.00</h3>
+				</div>
+			</div>
+		</div>
+		<div class="cart-checkout">
+			<h3>Cart Total: $259.98</h3>
+			<div class="checkout-content">
+				<div class="shipping-icon">
+					<img src="img/shipping.svg" alt="test">
+				</div>
+				<p>You are <span class="pink">$21.01</span> away from Free Shipping</p>
+				<div class="over-line"></div>
+			</div>
+			<button class="checkout-btn">CHECKOUT</button>
+			<a href="#">Continue Shopping</a>
+		</div>
+		<div class="cart-bottom">
+			<h3>You may also like</h3>
+			<div class="cart-bottom-container">
+				<div class="cart-bottom-wrapper">
+					<div class="cart-bottom-img"><img src="img/innerproduct1.jpg" alt="test"></div>
+					<div class="cart-bottom-content">
+						<div class="rate">
+							<span class="material-symbols-outlined star">star</span>
+							<p>5.0</p>
+						</div>
+						<h3 class="product-title">Drippa Gel</h3>
+						<p class="product-price"><b>$30.00</b></p>
+						<button class="add-btn"><span class="material-icons g-icons"><b>add</b></span> ADD</button>
+					</div>						
+				</div>
+				<div class="cart-bottom-wrapper">
+					<div class="cart-bottom-img"><img src="img/innerproduct1.jpg" alt="test"></div>
+					<div class="cart-bottom-content">
+						<div class="rate">
+							<span class="material-symbols-outlined star">star</span>
+							<p>5.0</p>
+						</div>
+						<h3 class="product-title">Drippa Gel</h3>
+						<p class="product-price"><b>$30.00</b></p>
+						<button class="add-btn"><span class="material-icons g-icons"><b>add</b></span> ADD</button>
+					</div>						
+				</div>
+				<div class="cart-bottom-wrapper">
+					<div class="cart-bottom-img"><img src="img/innerproduct1.jpg" alt="test"></div>
+					<div class="cart-bottom-content">
+						<div class="rate">
+							<span class="material-symbols-outlined star">star</span>
+							<p>5.0</p>
+						</div>
+						<h3 class="product-title">Drippa Gel</h3>
+						<p class="product-price"><b>$30.00</b></p>
+						<button class="add-btn"><span class="material-icons g-icons"><b>add</b></span> ADD</button>
+					</div>						
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<script type="text/javascript">
+			function myFunction() {
+				var x = document.getElementById("toggle-window");
+				var y = document.getElementById("cart");
+				if (x.style.display === "block") {
+					x.style.display = 'none';
+					y.style.cssText = 'visibility:hidden;right:-872px;';
+				} else {
+					x.style.display = 'block';
+					y.style.cssText = 'visibility:visible;right:0;';
+				}
+			}
+			// function openNav() {
+			// 	document.getElementById("cart").style.right = "0";
+			// 	document.getElementById("toggle-window").style.display = "block";
+			// }
+
+			// function closeNav() {
+			// 	document.getElementById("cart").style.right = "-872px";
+			// 	document.getElementById("toggle-window").style.display = "none";
+			// }
+
+			// document.onclick = function (e) {
+			// 	if (e.target.id !== 'cart' && e.target.id !== 'btn_frontpage_menu') {
+			// 		if (e.target.offsetParent && e.target.offsetParent.id !== 'cart')
+			// 			closeNav()
+			// 	}
+			// }
+		</script>
+	</footer>
+</body>
+</html>
