@@ -46,7 +46,7 @@ ol li a {
 }
 
 #toggle-window {
-	display: block;
+	display: none;
 }
 .pink {
 	color: var(--pink);
@@ -70,8 +70,8 @@ ol li a {
 	max-width: 100%;
 	height: 100vh;
 	position: fixed;
-	right: 0px;
-	visibility: visible;
+	right: -872px;
+	visibility: hidden;
 	top: 0;
 	background: white;
 	box-shadow: 0 0 80px #bbbbbb;
